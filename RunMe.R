@@ -22,7 +22,7 @@ yourhost="nvirginia-mysql-instance1.c6nnllocq12q.us-east-1.rds.amazonaws.com"){
   #Cerrar la conexion
   #Obtener el resultado
   dbDisconnect(DB)  
-  #return(result)
+  print(result)
 }
 
 #FUNCION PARA EXTRAER INDICES
@@ -98,6 +98,6 @@ repeat {
 		insertSQL("ixic","Nasdaq")
 	}
 
-	Sys.sleep(60*1)
+	Sys.sleep(10)
 }
 
