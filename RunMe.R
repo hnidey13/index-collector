@@ -18,7 +18,7 @@ yourhost="nvirginia-mysql-instance1.c6nnllocq12q.us-east-1.rds.amazonaws.com"){
   #Enviar Query
   rs <- dbSendQuery(DB, query)
   #Convertir resultado en data frame
-  #result <- fetch(rs, -1)
+  result <- fetch(rs, -1)
   #Cerrar la conexion
   #Obtener el resultado
   dbDisconnect(DB)  
