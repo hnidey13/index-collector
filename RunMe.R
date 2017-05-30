@@ -75,11 +75,11 @@ insertSQL<- function(index_id,index_name){
 
 marketTime<-function() {
 	#Días de la semana en los que abre el mercado
-	diasHabiles<-c("lunes","martes","miércoles","jueves","viernes")
+	diasHabiles<-weekdays(Sys.Date()+0:6)
 
 	#Hora en la que abre y en la que cierra
-	open<-strptime("9:30","%H:%M")
-	close<-strptime("16:01","%H:%M")
+	open<-strptime("14:30","%H:%M")
+	close<-strptime("21:01","%H:%M")
 	dia<-weekdays(Sys.Date())
 	hora<-as.POSIXlt(Sys.time())$hour
 	minuto<-as.POSIXlt(Sys.time())$min
