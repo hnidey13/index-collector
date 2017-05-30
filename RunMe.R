@@ -90,14 +90,14 @@ marketTime<-function() {
 }
 
 
-while (T) {
+repeat {
 
-	if (marketTime()){
+	if (T){
 		insertSQL("gspc","S&P 500")
 		insertSQL("dji","Dow Jones")
 		insertSQL("ixic","Nasdaq")
 	}
 
-	Sys.sleep(60*30)
+	Sys.sleep(60*1)
 }
 
