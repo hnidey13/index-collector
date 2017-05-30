@@ -1,6 +1,6 @@
 #Limpiamos area de crabajo
 rm(list=ls())
-ls()
+#ls()
 
 
 #Cargamos la libreria RMySQL
