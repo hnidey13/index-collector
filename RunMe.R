@@ -75,7 +75,7 @@ insertSQL<- function(index_id,index_name){
 
 marketTime<-function() {
 	#Días de la semana en los que abre el mercado
-	diasHabiles<-weekdays(Sys.Date()+0:6)
+	diasHabiles<-c("Monday","Tuesday","Wednesday","Thursday","Friday")
 
 	#Hora en la que abre y en la que cierra
 	open<-strptime("14:30","%H:%M")
@@ -88,7 +88,7 @@ marketTime<-function() {
 	#Mercado abierto True, mercado cerrado False
 	all(is.element(dia,diasHabiles),hora_minuto>=open,hora_minuto<close)
 }
-
+#huevos
 
 repeat {
 
