@@ -88,7 +88,7 @@ marketTime<-function() {
 	#Mercado abierto True, mercado cerrado False
 	all(is.element(dia,diasHabiles),hora_minuto>=open,hora_minuto<close)
 }
-#huevos
+print("cambio exitoso")
 
 repeat {
 
